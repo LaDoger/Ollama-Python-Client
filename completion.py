@@ -2,8 +2,12 @@ import json
 import requests
 
 
+# Choose the model you want to use. By default it's "mistral"
+model = "mistral"
+
 # Set system prompt here
-system_prompt = """Be concise!"""
+system_prompt = """Be concise!
+"""
 
 # Set user prompt here
 user_prompt = """Teach me yoga.
@@ -12,7 +16,7 @@ user_prompt = """Teach me yoga.
 
 url = 'http://localhost:11434/api/generate'
 data = {
-    "model": "mistral",
+    "model": model,
     "system": system_prompt,
     "prompt": user_prompt,
     "stream": False
