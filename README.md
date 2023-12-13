@@ -13,7 +13,10 @@ curl https://ollama.ai/install.sh | sh
 ollama run mistral
 ```
 
-3. Then you execute `completion.py`:
+3. Then you execute `completion.py` or `chat.py`:
 ```bash
 python3 completion.py
+```
+```bash
+python3 chat.py
 ```
